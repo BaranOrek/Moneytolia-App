@@ -1,0 +1,18 @@
+<!-- <p>offer-create-page works!</p> -->
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        <div class="navbar-element-container">
+          <h2>Moneytolia</h2>
+            
+            <button class="nav_button" routerLink="/">Kampanya Oluştur</button>
+            <button class="nav_button" routerLink="/kampanyalar">Kampanyalar</button>
+            <button class="nav_button" (click)="onClickExit()">Çıkış</button>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z4">
+        <h2>Kampanya Oluştur</h2>
+        <app-add-offer></app-add-offer>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

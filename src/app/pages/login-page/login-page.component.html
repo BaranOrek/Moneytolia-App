@@ -1,0 +1,28 @@
+
+<div class="login_container">
+    <div class="login_box">
+        <form>
+            <div class="form-control">
+                <label for="user-name"> 
+                    <div class="form-header">
+                        Kullanıcı Adı:
+                    </div>
+                </label>
+                <input type="text" name="user-name"  id="user-name" [(ngModel)]="userName" placeholder="Kullanıcı Adı Giriniz" >
+        
+                <label for="user-description"> 
+                    <div class="form-header">
+                        Şifre :
+                    </div>
+                </label>
+                <input type="password" name="user-description"  id="user-description" [(ngModel)]="password" placeholder="Lütfen Şifre giriniz" >
+            </div>
+            <!-- <input class="submit-button" type="submit" value="oluştur"> -->
+            <div class="submit-button-div">
+                <button class="submit-button" (click)="onClick()">
+                    Giriş
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

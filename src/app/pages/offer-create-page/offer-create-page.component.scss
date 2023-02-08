@@ -1,13 +1,10 @@
-mat-toolbar {
-    background: white;
-    height: 100px;
-    border-bottom: 1px solid black;
-}
 mat-sidenav{
     margin: 16px;
-    width: 200px;
+    //max-width: 200px;
+    width: 20%;
+    min-width: 150px;
     background: whitesmoke;
-    color: white;
+    color: black;
     border-radius: 20px;
     text-align: center;
     padding: 10px;
@@ -16,20 +13,24 @@ mat-sidenav{
 mat-sidenav-container{
     height: calc(100vh - 50px);
 }
+.navbar-element-container{
+    display: flex;
+    flex-direction: column;
+}
+.nav_button{
+    margin-bottom: 10px;
+}
 .content{
     margin: 16px;
     margin-left: 32px;
-    
+    min-width: 150px;
     text-align: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: whitesmoke;
     border-radius: 20px;
     padding: 16px;
 }
 .element{
     background-color: beige;
     margin-top: 10px;
-}
-.logo{
-    width: 300px;
 }

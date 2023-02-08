@@ -1,0 +1,27 @@
+<!-- <p>form-diolog works!</p> -->
+<div class="dialog_container">
+    <form>
+        <div class="form-control">
+            <label for="offer-name"> 
+                <div class="form-header">
+                    Kampanya Adı:
+                </div>
+            </label>
+            <input type="text" name="offer-name" [(ngModel)]="name" id="offer-name" placeholder="Kampanya adı giriniz">
+
+            <label for="offer-description"> 
+                <div class="form-header">
+                    Kampanya Açıklaması:
+                </div>
+            </label>
+            <input type="text" name="offer-description" [(ngModel)]="description" id="offer-description" placeholder="Kampanya açıklaması giriniz" >
+        </div>
+        <!-- <input class="submit-button" type="submit" value="oluştur"> -->
+        <div class="submit-button-div">
+            <button class="submit-button" (click)="onClick()" mat-dialog-close>
+                Güncelle
+            </button>
+        </div>
+        
+    </form>
+</div>

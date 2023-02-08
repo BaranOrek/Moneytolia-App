@@ -1,0 +1,54 @@
+
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+      <div class="navbar-element-container">
+        <h2>Moneytolia</h2>
+        <button class="nav_button" routerLink="/">Kampanya Oluştur</button>
+        <button class="nav_button" routerLink="/kampanyalar">Kampanyalar</button>
+        <button class="nav_button" (click)="onClickExit()">Çıkış</button>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content">
+        <h2>Kampanyalar</h2>
+        
+        <!-- <div class="element">{{offers}}</div> -->
+        <div *ngFor="let offer of offers; let i = index">
+          <div class="card_container">
+            <div class="card_title_container">
+              <div class="title_cell">
+                {{offer.name}}
+              </div>
+            </div>
+            <div class="row_container">
+              <div class="cell_header">
+                Kampanya Açıklaması: 
+              </div>
+              <div class="info">
+                {{offer.description}}
+              </div>
+            </div>
+            <div class="row_container">
+              <div class="cell_header">
+                Kampanya Tarihi: 
+              </div>
+              {{offer.date}}
+            </div>
+            <div class="row_container">
+              <div class="cell_header">
+                Kampanya Sayısı: 
+              </div>
+              <button class="dec_button" (click)="onClickDec(i)">-</button>
+              {{offers?.at(i)?.offerCount}}
+              <button class="inc_button" (click)="onClickInc(i)">+</button>
+            </div>
+            <div class="row_container">
+              <button class="submit-button" (click)="openDiolog(i)">GÜNCELLE</button>
+              <button class="delete-button" (click)="onClickDelete(i)">SİL</button>
+            </div>
+              
+          </div>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

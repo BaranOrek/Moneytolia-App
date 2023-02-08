@@ -1,0 +1,32 @@
+.form-control{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    padding: 10px;
+}
+.form-header{
+    //justify-content: flex-start;
+    text-align: left;
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+.submit-button-div{
+    margin-top: 16px;
+}
+.submit-button{
+    width: 40%;
+    margin-left: 30%;
+    min-width: 100px;
+    height: 30px;
+    background-color: rgb(131, 226, 93);
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: medium;
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
