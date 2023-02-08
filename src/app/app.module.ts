@@ -19,8 +19,8 @@ import { FormDiologComponent } from './components/form-diolog/form-diolog.compon
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 const appRoutes: Routes = [
-  { path: '', component: OfferCreatePageComponent },
-  { path: 'kampanyalar', component: OffersPageComponent },
+  { path: '', component: OffersPageComponent },
+  { path: 'kampanya-ekle', component: OfferCreatePageComponent },
   { path: 'giris', component: LoginPageComponent }
 ]
 
